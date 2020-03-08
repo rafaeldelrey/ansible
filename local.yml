@@ -2,4 +2,5 @@
   become: true
   tasks:
   - name: Install packages
-    apt: name=['htop', 'build-essential', 'openssh-server', 'nfs-common', 'ncdu', 'git']
+    apt: 
+      name: ['htop', 'build-essential', 'openssh-server', 'nfs-common', 'ncdu', 'git']
