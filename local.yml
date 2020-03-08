@@ -2,11 +2,4 @@
   become: true
   tasks:
   - name: Install packages
-    apt: name={{item}}
-    with_items:
-      - htop
-      - build-essential
-      - openssh-server
-      - nfs-common
-      - ncdu
-      - git
+    apt: name=['htop', 'build-essential', 'openssh-server', 'nfs-common', 'ncdu', 'git']
